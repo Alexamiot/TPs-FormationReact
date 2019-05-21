@@ -1,0 +1,47 @@
+
+.boutton{
+    font-size: 1.3em;
+    background: white;
+    border:none;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    box-shadow: none;
+}
+.boutton1{
+    font-size: 1.3em;
+    border: none;
+    background: darkorange;
+}
+.boutton2{
+    background: gold;
+    width: 320px;
+}
+.boutton3{
+    font-size: 1.3em;
+    width: 160px;
+    border: none;
+    background: darkorange;
+}
+
+
+.text{
+    background-color: white;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 300px;
+}
+.answer{
+    color: white;
+    margin-left: 20%;
+    margin-bottom: -20px;
+    margin-top: -2px;
+    width: 320px;
+}
+.calculatrice{
+    margin-left: 30%;
+    width: 540px;
+    height: 685px;
+    padding-bottom: 20px;
+}
