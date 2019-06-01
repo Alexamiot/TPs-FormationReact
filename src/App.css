@@ -21,11 +21,52 @@
   padding: 15px;
   cursor: pointer;
 }
-.header :hover{
+.header a :hover{
   color: cyan;
 }
 .page1{
+   color: black;
+ }
+
+.Album{
+  text-align: center;
+  color:white;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,.4)),url("./Images/woodenwall.jpg");
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.photos{
+  -ms-flex: auto;
+  flex: auto;
+  margin: .5vw;
+
+}
+
+.page2{
   color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+}
+
+.bouttonAlbum{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+
+}
+.AlbumChoice{
+  background-color: #282c34;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {

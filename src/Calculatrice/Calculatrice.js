@@ -10,9 +10,16 @@ class Calculatrice extends Component {
         })
     }
     answer = event=> {
-        this.setState({
-            contenu: eval(this.state.contenu)
-        })
+        try {
+            this.setState({
+                contenu: eval(this.state.contenu)
+            })
+        }
+        catch (e) {
+            this.setState({
+                contenu:'sry not supported, click on reset'
+            })
+        }
     }
     reboot = event=> {
         this.setState({
@@ -20,9 +27,15 @@ class Calculatrice extends Component {
         })
     }
     delete = event=> {
-        this.setState({
-            contenu: this.state.contenu.substr(0,this.state.contenu.length-1)
-        })
+        try {
+            this.setState({
+                contenu: this.state.contenu.substr(0,this.state.contenu.length-1)
+            })
+        }
+        catch (e) {
+            this.reboot();
+        }
+
     }
 
     render(){

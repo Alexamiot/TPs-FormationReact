@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 class Accueil extends Component {
 
@@ -19,7 +19,6 @@ class Accueil extends Component {
                 <a href="https://reactjs.org/docs/hello-world.html" target="_blank"> Doc de React </a><br/>
                 <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank"> Doc de React Native </a><br/>
                 <a href="https://reactnavigation.org/docs/en/getting-started.html" target="_blank"> Doc de React Navigation </a><br/>
-                <a href="" target="_blank"> Doc de React </a><br/>
 
             </div>
         );

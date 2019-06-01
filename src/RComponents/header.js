@@ -14,12 +14,13 @@ class Header extends Component {
             <div className="App">
                 <header className="App-header">
                     <div className="header">
-                        <a onClick={()=>this.props.changePage(1)}>Accueil</a>
-                        <a onClick={()=>this.changeActivePage(2)}>Leaderboard</a>
+                        <a onClick={()=>this.props.changePage(1)} >Accueil</a>
+                        <a onClick={()=>this.changeActivePage(2)}>Tetris</a>
                         <a onClick={()=>this.changeActivePage(3)}>Compte à rebours</a>
                         <a onClick={()=>this.changeActivePage(4)}>Calculatrice</a>
                         <a onClick={()=>this.changeActivePage(5)}>ToDoList</a>
                         <a onClick={()=>this.changeActivePage(6)}>Nous contacter</a>
+                        <a onClick={()=>this.changeActivePage(7)}>API Flickr</a>
                     </div>
 
                 </header>
