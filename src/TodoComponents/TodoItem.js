@@ -1,12 +1,8 @@
 import React from 'react';
-import '../list.css';
+import '../RComponents/list.css';
 
 
 export default class TodoItem extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
     removeTodo(id){
         this.props.removeTodo(id);
     }

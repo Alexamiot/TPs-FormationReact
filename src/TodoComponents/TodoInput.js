@@ -1,5 +1,5 @@
 import React from 'react';
-import '../list.css';
+import '../RComponents/list.css';
 
 
 export default class TodoInput extends React.Component{

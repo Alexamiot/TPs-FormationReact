@@ -9,10 +9,9 @@ const Tetris = require('react-tetris');
 
  */
 
-class TTetris extends React.Component {
+class Tetris extends React.Component {
 
     render() {
-        const { store } = this.props;
         return (
             <div>
                 <embed style={{width:'100%', height:600}} src="https://avin.github.io/react-game-tetris/"></embed>
@@ -21,4 +20,4 @@ class TTetris extends React.Component {
     }
 }
 
-export default TTetris;
+export default Tetris;

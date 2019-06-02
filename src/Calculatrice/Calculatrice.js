@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Calculatrice.css';
 
 class Calculatrice extends Component {
-    state={contenu:""};
+    state={contenu:" "};
 
     handleChange = event=> {
         this.setState({

@@ -34,10 +34,10 @@ class FlickR extends Component {
             }.bind(this))
     }
     switchAlbum(){
-        if(this.state.AlbumOnScreen==this.state.albums.length){
+        if(this.state.AlbumOnScreen===this.state.albums.length){
             this.setState({AlbumOnScreen:0});
         }
-        if(this.state.AlbumOnScreen==1){
+        if(this.state.AlbumOnScreen===1){
             this.getAlbum(url2);
             this.setState({AlbumOnScreen:0});
         }
@@ -58,7 +58,7 @@ class FlickR extends Component {
                     var srcPath = 'https://farm'+pic.farm+'.staticflickr.com/'+pic.server+'/'+pic.id+'_'+pic.secret+'.jpg';
                     return(
                         <div className="photos">
-                            <img style={{width:'100%', maxWidth:700 ,height:'auto'}} alt='Italy' src={srcPath}/>
+                            <img style={{width:'100%', maxWidth:700 ,height:'auto'}} alt='Album' src={srcPath}/>
                             <h5>{pic.title}</h5>
                         </div>)
                 })

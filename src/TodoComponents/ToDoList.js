@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../list.css';
+import '../RComponents/list.css';
 import TodoInput from "./TodoInput.js";
 import TodoItem from "./TodoItem.js";
 

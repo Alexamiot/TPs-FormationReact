@@ -1,16 +1,36 @@
 import React, { Component } from 'react';
+import {Link } from "react-router-dom";
 
 class Header extends Component {
 
-    constructor(props){
-        super(props);
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <div className="header">
+                        <Link to="/">Accueil</Link>
+                        <Link to="/Tetris">Tetris</Link>
+                        <Link to="/Compteur">Compte à rebours</Link>
+                        <Link to="/Calculatrice">Calculatrice</Link>
+                        <Link to="/Todo">Todolist</Link>
+                        <Link to="/Flickr">FlickR (API)</Link>
+                        <Link to="/Contact">Nous contacter</Link>
+
+                    </div>
+                </header>
+            </div>
+        );
     }
+}
+
+
+export default Header;
+/*
+
     changeActivePage (newPage){
         this.props.changePage(newPage);
     }
 
-    render() {
-        return (
             <div className="App">
                 <header className="App-header">
                     <div className="header">
@@ -25,9 +45,5 @@ class Header extends Component {
 
                 </header>
             </div>
-        );
-    }
-}
-Header.defaultProps={Page:1};
-
-export default Header;
+            Header.defaultProps={Page:1};
+ */

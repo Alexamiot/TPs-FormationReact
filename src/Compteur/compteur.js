@@ -17,7 +17,7 @@ export class Compteur extends Component {
     render(){
         return (
 
-            <div>
+            <div className="center">
                 <h3>Compte à rebours jusqu'au {this.state.deadline} (YYYY/MM/DD)</h3>
                 <Clock
                     deadline={this.state.deadline}

@@ -30,18 +30,17 @@
     margin: 20px;
     margin-top: 50px;
     padding: 10px;
-    width: 300px;
+    width: 20%;
 }
 .answer{
+    text-align: center;
     color: white;
-    margin-left: 20%;
-    margin-bottom: -20px;
-    margin-top: -2px;
-    width: 320px;
+    margin-bottom: 0px;
+    width: 100%;
 }
 .calculatrice{
-    margin-left: 30%;
-    width: 540px;
-    height: 685px;
+    text-align: center;
+    width: 100%;
+    height: 70%;
     padding-bottom: 20px;
 }
