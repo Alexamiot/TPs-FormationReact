@@ -25,23 +25,19 @@ class FlickR extends Component {
             return response.json();
         })
             .then(function(data){
-                let List = data.photosets.photoset.map((album)=>{
+                let list = data.photosets.photoset.map((album)=>{
                     return(
-                            <button className='bouttonAlbum' onClick={()=> this.switchAlbum()}>{album.title._content}</button>
-                        )
-                })
-                this.setState({albums:List});
+                        album.title._content)
+                });
+                this.setState({albums:list});
             }.bind(this))
     }
-    switchAlbum(){
-        if(this.state.AlbumOnScreen===this.state.albums.length){
-            this.setState({AlbumOnScreen:0});
-        }
-        if(this.state.AlbumOnScreen===1){
+    switchAlbum(e){
+    console.log(this.state.albums);
+        if(e.target.innerHTML===this.state.albums[0]){
             this.getAlbum(url2);
-            this.setState({AlbumOnScreen:0});
         }
-        else{
+        else if(e.target.innerHTML===this.state.albums[1]){
             this.getAlbum(url);
             this.setState({AlbumOnScreen: this.state.AlbumOnScreen+1})
             }
@@ -71,10 +67,19 @@ class FlickR extends Component {
         this.getAlbum(url);
     }
 
+
+
+
     render() {
+
         return (
             <div>
-                <div className='AlbumChoice'> {this.state.albums}</div>
+                <div className='AlbumChoice'> {
+                    this.state.albums.map((album)=> {
+                    return (
+                        <button className='bouttonAlbum' onClick={(e) => this.switchAlbum(e)}>{album}</button>)
+                })}
+                </div>
                 <div className='Album'> {this.state.pictures} </div>
             </div>
         );

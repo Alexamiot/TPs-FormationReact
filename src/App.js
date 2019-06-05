@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './RComponents/header.js';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Accueil from './RComponents/Accueil.js';
 import ToDoList from "./TodoComponents/ToDoList";
 import Calculatrice from "./Calculatrice/Calculatrice.js";
@@ -18,14 +18,17 @@ class App extends Component {
         <Router>
           <div>
             <Header />
+            <Switch>
+              <Route exact path="/" component={Accueil} />
+              <Route path="/Todo" component={ToDoList} />
+              <Route path="/Calculatrice" component={Calculatrice} />
+              <Route path="/Compteur" component={Compteur} />
+              <Route path="/Tetris" component={Tetris} />
+              <Route path="/Flickr" component={FlickR} />
+              <Route path="/Contact" component={Contact} />
 
-            <Route exact path="/" component={Accueil} />
-            <Route path="/Todo" component={ToDoList} />
-            <Route path="/Calculatrice" component={Calculatrice} />
-            <Route path="/Compteur" component={Compteur} />
-            <Route path="/Tetris" component={Tetris} />
-            <Route path="/Flickr" component={FlickR} />
-            <Route path="/Contact" component={Contact} />
+
+            </Switch>
           </div>
         </Router>
 
